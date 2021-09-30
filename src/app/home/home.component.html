@@ -1,0 +1,17 @@
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body bg-success mt-1" *ngFor="let data of done$ | async">
+  {{data.title}}
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item ">
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body bg-warning mt-1" *ngFor="let data of undone$ | async">
+  {{data.title}}
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,12 @@
+
+<input type="text" #name />
+
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body bg-danger mt-1"  *ngFor="let d of data">
+      {{d.name}}
+        </div>
+      </div>
+    </div>
+    </div>
