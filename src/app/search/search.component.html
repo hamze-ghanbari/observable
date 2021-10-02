@@ -1,0 +1,12 @@
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Search :</label>
+    <input type="text" #searchinput class="w-50" id="exampleFormControlInput1" />
+  </div>
+<hr />
+<div class="card" style="width: 18rem;" *ngFor="let album of albums$ | async">
+    <div class="card-body">
+      <h5 class="card-title">{{album.title}}</h5>
+      <p class="card-text">{{album.userId}}</p>
+    </div>
+  
+  </div>

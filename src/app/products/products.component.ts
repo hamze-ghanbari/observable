@@ -18,6 +18,7 @@ export class ProductsComponent implements OnInit {
     fromEvent(this.input.nativeElement,'input').pipe(
       map(event => event as InputEvent),
       map (data => (data.target as HTMLInputElement).value),
+      // زمانی که ترتیب سابسکریپشن ها اهیمت دارد
       concatMap(item => this.userservicve.editname(item)),
       tap(i => console.log(i))
     ).subscribe();
